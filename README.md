@@ -1,31 +1,269 @@
-# GTA-Style Short Drama Skill
+<p align="center">
+  <a href="https://www.luxreal.ai/features/drama-agent?utm_source=GitHub&amp;utm_medium=website&amp;utm_campaign=GTA&amp;utm_content=readme_logo_en">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/luxreal-logo-dark.png">
+      <img src="./assets/luxreal-logo-light.png" width="172" alt="LuxReal">
+    </picture>
+  </a>
+</p>
 
-Turn one idea into **10 connected open-world missions** for an AI short drama. Keep the same original characters, locations, and props across scenes. Get image prompts, video prompts, narration, and dialogue for every mission.
+<h1 align="center">GTA-Style Short Drama Skill</h1>
+<p align="center">Turn one premise into 10 connected open-world missions with a consistent original cast, image and video prompts, narration, and dialogue.</p>
+<h3 align="center"><a href="https://www.luxreal.ai/features/drama-agent?utm_source=GitHub&amp;utm_medium=website&amp;utm_campaign=GTA&amp;utm_content=readme_primary_en">Make your first shot in LuxReal →</a></h3>
+<p align="center"><a href="./README.zh-CN.md">简体中文</a> · <a href="#install-and-use">Install Skill</a></p>
 
-[简体中文](./README.zh-CN.md) · [Watch the 30-second demo](./assets/gta-style-demo.mp4) · [Make your first shot in LuxReal](https://www.luxreal.ai/features/drama-agent?utm_source=GitHub&utm_medium=website&utm_campaign=GTA&utm_content=readme_en)
+## Watch the demo
 
-## Quick Start
+Watch the motion preview below. Click it to play the full 30-second video with sound.
 
-1. Install the Skill in your agent environment.
+[![GTA-style motion preview. Click for the full 30-second video.](./assets/gta-demo-loop.webp)](https://cdn.jsdelivr.net/gh/YvonneMovingon/gta-style-short-drama-skill@main/assets/gta-style-demo.mp4)
 
-   ```sh
-   npx skills add YvonneMovingon/gta-style-short-drama-skill --skill open-world-short-drama
-   ```
+**[Make a shot from my own idea →](https://www.luxreal.ai/features/drama-agent?utm_source=GitHub&utm_medium=website&utm_campaign=GTA&utm_content=after_demo_en)** · [Play the full video](https://cdn.jsdelivr.net/gh/YvonneMovingon/gta-style-short-drama-skill@main/assets/gta-style-demo.mp4) · [Download MP4](./assets/gta-style-demo.mp4)
 
-2. Give your agent one idea, or ask it to write the first mission.
+![Three frames from the demo video](./assets/gta-demo-frames.jpg)
 
-   > Use Open-World Short Drama to write a story about a night courier delivering a cassette to a shuttered radio station. Give me 10 connected missions and a first-shot brief for LuxReal.
+## Make the first shot
 
-3. Copy the first mission brief into [LuxReal Short Drama Agent](https://www.luxreal.ai/features/drama-agent?utm_source=GitHub&utm_medium=website&utm_campaign=GTA&utm_content=quickstart_en). Check the opening composition and recurring references in the storyboard before rendering.
+Copy the first-mission brief from Midnight Relay into LuxReal Short Drama Agent. Check the framing, character, and key prop in the storyboard, then make the shot.
 
-You can also paste [SKILL.md](./skills/open-world-short-drama/SKILL.md) and the [delivery format](./skills/open-world-short-drama/references/delivery-format.md) into an agent. The [Midnight Relay example](./skills/open-world-short-drama/references/example-midnight-relay.md) includes the full ten-mission packet and a ready-to-paste brief.
+> 16:9, 12-second original micro-drama, set at a rainy harbor after dusk. Ren is a night courier in their early 30s with short black curls, warm brown skin, a mustard rain jacket, dark trousers and a slate crossbody bag. The delivery van is weathered white with one teal stripe. Start over Ren's right shoulder beside the van's rear wheel, with a dispatch locker on the right. Ren opens the locker and lifts a transparent cassette with one orange tab. A nearby sign glows through the rain. End on the orange tab against Ren's mustard sleeve. Ren says, “An actual tape?” Use the cassette in the next scene at the shuttered radio station.
 
-## What you get
+**[Open LuxReal Short Drama Agent →](https://www.luxreal.ai/features/drama-agent?utm_source=GitHub&utm_medium=website&utm_campaign=GTA&utm_content=first_shot_en)**
 
-- A character and world guide with recurring asset IDs and continuity notes.
-- Ten missions that lead into each other, plus an optional one-mission preview.
-- Paired image and video prompts, timed narration, and dialogue.
+## Preview the included materials
 
-If you make a scene, [share what worked in an issue](https://github.com/YvonneMovingon/gta-style-short-drama-skill/issues). Star the repo to save it for your next project.
+In Midnight Relay, a night courier delivers a tape to a shuttered station and races a storm to get its last broadcast back on the air. Copy the cast references or expand a mission for its complete prompts.
 
-Skill instructions and prompt examples are available under the [MIT License](./LICENSE). The demo video is provided for viewing.
+### Cast and recurring assets
+
+- **C01 Ren.** Night courier with short black curls, a mustard rain jacket, and a slate crossbody bag.
+- **C02 Sol.** Former station technician with cropped silver hair, a teal work shirt, and round glasses.
+- **P01 / V01 / W01.** A clear cassette with an orange tab, a white van with one teal stripe, and the coastal town of Tern Harbor.
+
+### Ten missions and full prompts
+
+| Mission | Objective and handoff |
+|---|---|
+| M01 · Last Pickup | Pick up the final item. The station address sends Ren straight to a building no longer on air. |
+| M02 · Off the Air | Deliver the tape at the station. The shutter is locked, and a note points Ren to the next-door repair shop. |
+| M03 · The Last Technician | Find someone who recognizes the tape. Sol recognizes their own orange label and asks to hear it. |
+| M04 · The Recorded Clue | Test the tape. The old harbor announcement refers to an emergency field recorder kept at the ferry shed. |
+| M05 · The Ferry Shed | Collect the field recorder. Sol takes the tape and receiver kit, and both head for the lighthouse studio. |
+| M06 · Road Closed | Drive to the lighthouse. A closed service road forces them onto the footbridge. |
+| M07 · Crosswind | Cross the footbridge. The lighthouse lamp reveals the studio door as they reach the far shore. |
+| M08 · The Glass Booth | Enter the elevated studio. Its on-air lamp is dark, but the desk wakes and the tape can be loaded. |
+| M09 · On Air | Play the tape. The old station signature comes through, followed by a promise to keep the harbor company through the storm. |
+| M10 · First Light | See who heard the broadcast. The morning lights and two radios answer the first scene's impossible delivery. |
+
+Expand any mission for its opening image prompt, video prompt, narration, dialogue, and continuity notes.
+
+<details>
+<summary>M01 · Last Pickup</summary>
+
+**Objective and handoff:** Pick up the final item. The station address sends Ren straight to a building no longer on air.
+
+**Image prompt:** Wide 16:9 third-person frame behind the right shoulder of Ren, a warm-brown-skinned courier with short black curls, mustard rain jacket, dark trousers and a slate bag. A rain-spotted white van with one teal stripe stands to the left. The closed blue dispatch locker is on the right at arm's length. Sodium light shimmers across shallow puddles.
+
+**Video prompt:** Start in the same wide over-right-shoulder view, mustard-jacket courier with short black curls and slate bag between the striped white van on the left and closed locker on the right. 0–3s: Ren lifts the spring-latch cover. 3–8s: the locker opens and Ren removes one clear cassette with an orange tab; rain patters on the van roof. 8–12s: the lens moves to the tab framed against the mustard sleeve.
+
+**Narration (0–2s):** One more delivery.
+
+**Dialogue (Ren, 8–10s):** “An actual tape?”
+
+**Continuity out:** Ren has the intact tape and the destination.
+
+</details>
+
+<details>
+<summary>M02 · Off the Air</summary>
+
+**Objective and handoff:** Deliver the tape at the station. The shutter is locked, and a note points Ren to the next-door repair shop.
+
+**Image prompt:** Wide 16:9 view over the left shoulder of Ren, short black curls, warm brown skin, mustard rain jacket, slate bag and dark trousers. Ren stands a step from a closed steel station shutter, cassette with orange tab held in the left hand. A torn paper notice hangs from the shutter, a lit repair shop to frame right.
+
+**Video prompt:** Start with the same locked silver shutter, the repair shop right, and the curly-haired courier's mustard shoulder left, orange-tab tape in Ren's left hand. 0–4s: Ren knocks twice; only the rain answers. 4–8s: they lift the torn notice, revealing a hand-painted arrow toward the repair shop. 8–12s: look right and start walking; the shop's warmth colors their face.
+
+**Narration (0–2s):** The address was right.
+
+**Dialogue (Ren, 7–9s):** “The station's closed.”
+
+**Continuity out:** Tape stays with Ren. The shop is one doorway away.
+
+</details>
+
+<details>
+<summary>M03 · The Last Technician</summary>
+
+**Objective and handoff:** Find someone who recognizes the tape. Sol recognizes their own orange label and asks to hear it.
+
+**Image prompt:** 16:9 two-shot from inside a cluttered radio repair shop, rainy doorway behind Ren. Ren stands on the left, warm brown skin, short black curls, wet mustard jacket, dark trousers and slate bag. At right, Sol has cropped silver hair, olive skin, round glasses, teal shirt and white T-shirt. One clear cassette with orange tab sits in Ren's open left palm. A dead green oscilloscope and a working amber desk lamp sit between them.
+
+**Video prompt:** Begin in the same two-shot, curly-haired Ren left in the mustard jacket, silver-haired Sol right in teal and round glasses. Ren's open palm holds the orange-tab cassette at desk height. 0–4s: Sol sets down a pen and leans toward the label. 4–9s: Sol points toward a small deck deeper in the shop; hold on their face for the line. 9–12s: Ren closes their hand around the tape. Ambient rain fades behind transformer hum.
+
+**Narration:** No narration; leave room for the reaction.
+
+**Dialogue (Sol, 5–8s):** “That's my label. Put it in the deck.”
+
+**Continuity out:** Ren still holds the tape, knows Sol can identify the recording.
+
+</details>
+
+<details>
+<summary>M04 · The Recorded Clue</summary>
+
+**Objective and handoff:** Test the tape. The old harbor announcement refers to an emergency field recorder kept at the ferry shed.
+
+**Image prompt:** Tight 16:9 three-quarter view of the service bench. Ren, warm brown skin and mustard jacket, holds the transparent orange-tab cassette just outside a tabletop tape deck. Sol with silver crop, round glasses, olive skin and teal over white stands behind the deck. A little analog speaker is beside Sol at frame right; rain slips down the distant frosted glass.
+
+**Video prompt:** Start with the same tabletop composition, Ren's mustard sleeve and the clear orange-tab tape in front of the deck, Sol in teal visible over the speaker. 0–3s: Ren inserts the tape and hits Play. 3–8s: a soft crackle, then a recorded location clue. Sol traces a finger toward a ferry icon on a wall map. 8–12s: Ren ejects and pockets the tape; cut on the click.
+
+**Narration:** No narration.
+
+**Dialogue (recorded harbor announcer, 4–7s):** “Backup recorder: the old ferry shed.”
+
+**Continuity out:** The tape returns to Ren's bag. They head for the shed.
+
+</details>
+
+<details>
+<summary>M05 · The Ferry Shed</summary>
+
+**Objective and handoff:** Collect the field recorder. Sol takes the tape and receiver kit, and both head for the lighthouse studio.
+
+**Image prompt:** Medium 16:9 framing at a ferry shed shelf. Ren, short black curls, warm brown skin, mustard rain jacket and slate bag, is left with a clear orange-tab cassette in hand. Sol, cropped silver hair, olive skin, round glasses, teal shirt over white, is on the right reaching toward a metal field recorder tucked beside a life ring. Rain is visible through the open door.
+
+**Video prompt:** Match the still at second zero: mustard-jacket Ren left with orange-tab tape, silver-haired Sol right beside the metal recorder and life ring. 0–4s: Sol lifts the recorder. 4–8s: Ren hands the cassette over and Sol slips it into the recorder case's exterior sleeve. 8–12s: both turn toward the shed door under a single swinging bulb.
+
+**Narration (0–2s):** Now they just needed a signal.
+
+**Dialogue (Sol, 8–10s):** “The lighthouse studio.”
+
+**Continuity out:** Sol carries the closed kit and visible cassette sleeve.
+
+</details>
+
+<details>
+<summary>M06 · Road Closed</summary>
+
+**Objective and handoff:** Drive to the lighthouse. A closed service road forces them onto the footbridge.
+
+**Image prompt:** 16:9 third-person chase view behind a weathered white van with a single teal stripe, waiting several metres short of a closed storm barrier. Wind drives rain across the headlight beams. Under the roadside lamp, a smaller sign indicates the footbridge to the left. No one is yet outside the van.
+
+**Video prompt:** Begin in the same rear chase view, white van with one teal stripe stopped in the cone of the barrier lamps. 0–4s: the indicator blinks, tires splash as the van pulls into the lay-by. 4–8s: short motivated cut to the side door as Ren in the mustard jacket steps out; Sol, silver hair, round glasses and teal shirt, follows carrying the metal kit with orange-tab cassette in its exterior sleeve. 8–12s: the two look toward the footbridge sign. The van stays parked.
+
+**Narration (0–3s):** The road was gone.
+
+**Dialogue (Ren, 9–11s):** “We can walk it.”
+
+**Continuity out:** Both walk; Sol retains the kit and cassette.
+
+</details>
+
+<details>
+<summary>M07 · Crosswind</summary>
+
+**Objective and handoff:** Cross the footbridge. The lighthouse lamp reveals the studio door as they reach the far shore.
+
+**Image prompt:** 16:9 over-the-shoulder view at the near landing behind Ren, curly hair, mustard jacket and slate bag, with Sol's cropped silver hair, teal shirt and metal kit one step ahead. The orange tape tab shows through the kit sleeve. Wind ripples bridge flags, and the lighthouse lamp makes a pale line across the far end.
+
+**Video prompt:** Start over Ren's mustard shoulder at the near landing, Sol facing away in teal with the metal kit and orange tab visible. 0–5s: camera follows their first steps, rain running along the rails. 5–9s: they pause as the sweeping lighthouse light catches the studio entrance across the landing. 9–12s: Sol nods toward that light and starts moving again.
+
+**Narration:** No narration; keep bridge footsteps and weather clear.
+
+**Dialogue (Sol, 9–11s):** “That door. We're close.”
+
+**Continuity out:** The two arrive at the far-side studio entrance with the kit.
+
+</details>
+
+<details>
+<summary>M08 · The Glass Booth</summary>
+
+**Objective and handoff:** Enter the elevated studio. Its on-air lamp is dark, but the desk wakes and the tape can be loaded.
+
+**Image prompt:** 16:9 wide interior view facing the old lighthouse broadcast desk. Ren with warm brown skin, short black curls, mustard jacket and slate bag is beside the entrance left. Sol, olive skin, cropped silver hair, round glasses and teal over white, stands right holding the metal recorder kit with the orange cassette tab visible. The dark on-air lamp hangs above a dusty console.
+
+**Video prompt:** Open in the same wide studio view, Ren in mustard left, silver-haired Sol in teal right with the kit, lamp dark. 0–4s: Sol sets the kit beside the console. 4–8s: desk meters rise as the lamp room's lights return; Ren leans toward the glass. 8–12s: Sol opens the case and takes the only orange-tab cassette from the exterior sleeve.
+
+**Narration (0–2s):** The studio still had power.
+
+**Dialogue (Sol, 8–10s):** “We can play it.”
+
+**Continuity out:** Tape is in Sol's hands, console active, still off air.
+
+</details>
+
+<details>
+<summary>M09 · On Air</summary>
+
+**Objective and handoff:** Play the tape. The old station signature comes through, followed by a promise to keep the harbor company through the storm.
+
+**Image prompt:** Three-quarter close shot in 16:9 of Sol's hands at the recorder, with silver crop, round glasses and teal sleeve visible. The clear orange-tab cassette is in Sol's right hand next to the open deck. Ren in a wet mustard jacket listens from behind glass on the left. The small ON AIR lamp is dark and rain streaks the far window.
+
+**Video prompt:** Start in the same close composition, cassette immediately above the open deck, Sol's teal sleeve right and Ren's mustard figure behind glass left. 0–4s: Sol loads the cassette once and presses Play. 4–7s: the red on-air lamp comes on. 7–12s: hold on Ren as the station motif gives way to the recorded voice. The storm stays audible behind the tape.
+
+**Narration:** No additional narration.
+
+**Dialogue (tape, 7–11s):** “Tern Harbor, if you're listening, we're still here.”
+
+**Continuity out:** Tape is playing in the studio deck as the harbor hears it.
+
+</details>
+
+<details>
+<summary>M10 · First Light</summary>
+
+**Objective and handoff:** See who heard the broadcast. The morning lights and two radios answer the first scene's impossible delivery.
+
+**Image prompt:** 16:9 wide view from the lighthouse landing at early dawn. Ren, short black curls, warm brown skin, mustard rain jacket and slate bag, stands left against the rail. Sol, silver crop, olive skin, teal over white and round glasses, stands right. The studio lamp glows behind them; below, the harbor stalls are unlit, wet roofs reflecting pale sky.
+
+**Video prompt:** Begin at the same landing with Ren left and Sol right at the rail, studio lamp glowing behind them. 0–5s: a vendor switches on one stall light below, then a second stall lights up. 5–9s: drift back toward the pair as the station motif plays faintly from two radios down on the waterfront. 9–12s: Ren drops the bag against the rail and smiles, sunrise passing across the mustard shoulder.
+
+**Narration (9–12s):** The last delivery came through.
+
+**Dialogue:** No on-screen dialogue.
+
+**Continuity out:** The delivery is complete, the original tape remains in the station deck, and the story closes at dawn.
+
+</details>
+
+Each mission gives you an objective, an opening image prompt, a video prompt, timed narration and dialogue, and the state to carry into the next scene.
+
+<details>
+<summary>Expand the delivery template</summary>
+
+## Series header
+
+- Title, logline, selected format and timing, and a short synopsis including the ending.
+- Canonical cast and asset bible. Give each recurring asset an ID and a portable text descriptor. Establish visual geography, recurring wardrobe, object ownership, voice, and optional overlay layout.
+- One-line cause-and-effect spine from M01 through M10. Assets may change only at an explicit event. Record that event and carry the changed state forward.
+
+## Each mission
+
+Label each mission with its ID and a distinct title.
+
+1. **Objective and handoff.** State what happened immediately before, what the characters want here, and what visible outcome sets up the next mission. Resolve the central question on the last mission.
+2. **Opening image prompt.** Specify the frame at second zero. Include aspect ratio, shot size, camera orientation, composition, scene lighting, visible character descriptions and poses, and the current location and state of key objects. Describe visual texture using concrete details such as reflected wet neon, humid air, and third-person camera height. Leave out overlays if they compete with the frame. If enabled, reserve a consistent area for a custom overlay and composite precise labels in editing.
+3. **Video prompt.** Restate the opening composition and visible asset descriptions, then describe the moves in order with approximate timings, focused character reactions, scene audio, camera behavior, and the final frame. Keep still and video inputs usable without referring to previous text. A cut between missions can bridge a location change; the reason for the move belongs in the handoff.
+4. **Narration and character dialogue.** Put narration and on-screen dialogue in separate fields, with speaker IDs and approximate time slots. Keep speech short enough to fit. Narration may be added in post. If dialogue has no useful role, state “No on-screen dialogue” and leave that time for visual action or ambient audio. Exact speech and on-screen text can be added during editing if the chosen generator does not reproduce them reliably.
+5. **Continuity out.** Give the viewer a visible answer or question and record any object, time, wardrobe, or location changes that the next scene must honor.
+
+## Paste-ready first-scene brief
+
+Give a short block containing the premise, relevant cast descriptions, format, three visual beats, opening composition, final frame, and dialogue where present. Use the opening, action, and final frame already established for M01. The user can paste the brief into LuxReal and check its storyboard before spending time rendering. If a change is needed, correct the bible or the one affected shot and recheck the downstream handoff.
+
+</details>
+
+## Install and use
+
+```bash
+npx skills add YvonneMovingon/gta-style-short-drama-skill --skill open-world-short-drama
+```
+
+Give your agent a premise or ask for a one-mission preview. The Skill instructions and source files are also available to copy.
+
+[Skill instructions](./skills/open-world-short-drama/SKILL.md) · [Full example source](./skills/open-world-short-drama/references/example-midnight-relay.md) · [Delivery format source](./skills/open-world-short-drama/references/delivery-format.md)
+
+<h3 align="center"><a href="https://www.luxreal.ai/features/drama-agent?utm_source=GitHub&amp;utm_medium=website&amp;utm_campaign=GTA&amp;utm_content=readme_footer_en">Turn your premise into a first shot in LuxReal →</a></h3>
+
+Skill instructions and text examples are under the [MIT License](./LICENSE). The video and stills are available for preview. The LuxReal logo links to the product.
